@@ -1,0 +1,16 @@
+/* App.css - Intentionally left blank to avoid conflicts with global premium styles in index.css */
+.menu-item {
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.menu-item:hover {
+  background: rgba(99, 102, 241, 0.12);
+}
