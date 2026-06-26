@@ -15,7 +15,10 @@ export const AuthProvider = ({ children }) => {
   const [unreadCount, setUnreadCount] = useState(0);
   const [toastAlerts, setToastAlerts] = useState([]);
 
-  const API_URL = 'http://localhost:5000/api';
+  
+  const API_URL =
+  import.meta.env.VITE_API_URL ||
+  "http://localhost:5000/api";
 
   // Fetch current profile if token exists
   useEffect(() => {
@@ -63,9 +66,10 @@ export const AuthProvider = ({ children }) => {
     }
 
     // Connect socket
-    const socketClient = io('http://localhost:5000', {
-      auth: { token },
-    });
+    // Connect socket
+const socketClient = io(API_URL.replace('/api', ''), {
+  auth: { token },
+});
 
     setSocket(socketClient);
 
@@ -129,7 +133,7 @@ export const AuthProvider = ({ children }) => {
     return () => {
       socketClient.disconnect();
     };
-  }, [user, token]);
+  }, [user, token,  API_URL]);
 
   const addToastAlert = (toast) => {
     setToastAlerts((prev) => [toast, ...prev].slice(0, 10)); // Limit to last 10 toast alerts
