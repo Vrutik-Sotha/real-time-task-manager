@@ -47,6 +47,8 @@ router.post('/register', async (req, res) => {
       avatarColor,
       role: 'Member',
     });
+    console.log("User inserted into MongoDB");
+console.log(user);
 
     // Log Activity
     await ActivityLog.create({
