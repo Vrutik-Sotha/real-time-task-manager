@@ -47,7 +47,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
           <CheckSquare size={20} color="#fff" />
         </div>
         <span style={{ fontSize: '1.25rem', fontWeight: 800, letterSpacing: '0.5px', background: 'linear-gradient(to right, #fff, #a5b4fc)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-          Antigravity Task
+          TaskFlow
         </span>
       </div>
 
