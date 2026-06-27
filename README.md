@@ -15,6 +15,18 @@ Designed with a modern glassmorphism interface, the application supports task co
 
 ---
 
+## 🚀 Live Demo
+
+### 🌐 Frontend
+https://real-time-task-manager-hazel.vercel.app
+
+### ⚙️ Backend API
+https://real-time-task-manager-l6tc.onrender.com
+
+> **Note:** The backend is hosted on Render's free tier. It may take 30–60 seconds to respond after being idle.
+
+---
+
 ## 📸 Screenshots
 
 <table>
@@ -29,7 +41,7 @@ Designed with a modern glassmorphism interface, the application supports task co
 </tr>
 
 <tr>
-<td><img src="./screenshots/tasks-board.png" width="100%"></td>
+<td><img src="./screenshots/task-board.png" width="100%"></td>
 <td><img src="./screenshots/team-chat.png" width="100%"></td>
 </tr>
 
@@ -39,7 +51,7 @@ Designed with a modern glassmorphism interface, the application supports task co
 </tr>
 
 <tr>
-<td><img src="./screenshots/activity-logs.png" width="100%"></td>
+<td><img src="./screenshots/activity-log.png" width="100%"></td>
 <td><img src="./screenshots/workspace-members.png" width="100%"></td>
 </tr>
 
@@ -48,15 +60,7 @@ Designed with a modern glassmorphism interface, the application supports task co
 <td align="center"><b>Workspace Members</b></td>
 </tr>
 
-<tr>
-<td><img src="./screenshots/create-task.png" width="100%"></td>
-<td><img src="./screenshots/notifications.png" width="100%"></td>
-</tr>
 
-<tr>
-<td align="center"><b>Create Task</b></td>
-<td align="center"><b>Notifications</b></td>
-</tr>
 </table>
 ---
 
