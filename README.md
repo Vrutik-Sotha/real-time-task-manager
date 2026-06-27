@@ -1,3 +1,12 @@
+# 🚀 TaskFlow
+
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green?logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?logo=mongodb)
+![Socket.io](https://img.shields.io/badge/Socket.io-Real--Time-black?logo=socketdotio)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
 # 🚀 Task Manager Web Application
 
 A modern **real-time collaborative Task Management Web Application** built using the **MERN Stack**. The application enables teams to create, assign, organize, and monitor tasks efficiently through a clean dashboard, role-based access control, and real-time communication.
@@ -8,16 +17,47 @@ Designed with a modern glassmorphism interface, the application supports task co
 
 ## 📸 Screenshots
 
-> Add screenshots inside a `screenshots/` folder and update the paths below.
+<table>
+<tr>
+<td><img src="./screenshots/login.png" width="100%"></td>
+<td><img src="./screenshots/dashboard.png" width="100%"></td>
+</tr>
 
-| Dashboard | Task Board |
-|----------|-----------|
-| ![Dashboard](screenshots/dashboard.png) | ![Task Board](screenshots/taskboard.png) |
+<tr>
+<td align="center"><b>Login</b></td>
+<td align="center"><b>Dashboard</b></td>
+</tr>
 
-| Team Chat | Activity Logs |
-|----------|--------------|
-| ![Chat](screenshots/chat.png) | ![Activity](screenshots/activity.png) |
+<tr>
+<td><img src="./screenshots/tasks-board.png" width="100%"></td>
+<td><img src="./screenshots/team-chat.png" width="100%"></td>
+</tr>
 
+<tr>
+<td align="center"><b>Tasks Board</b></td>
+<td align="center"><b>Team Chat</b></td>
+</tr>
+
+<tr>
+<td><img src="./screenshots/activity-logs.png" width="100%"></td>
+<td><img src="./screenshots/workspace-members.png" width="100%"></td>
+</tr>
+
+<tr>
+<td align="center"><b>Activity Logs</b></td>
+<td align="center"><b>Workspace Members</b></td>
+</tr>
+
+<tr>
+<td><img src="./screenshots/create-task.png" width="100%"></td>
+<td><img src="./screenshots/notifications.png" width="100%"></td>
+</tr>
+
+<tr>
+<td align="center"><b>Create Task</b></td>
+<td align="center"><b>Notifications</b></td>
+</tr>
+</table>
 ---
 
 # ✨ Features
