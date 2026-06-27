@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+ 
 const ActivityLogSchema = new mongoose.Schema(
   {
     user: {
@@ -16,10 +16,11 @@ const ActivityLogSchema = new mongoose.Schema(
         'Logout',
         'Task Created',
         'Task Updated',
+        'Task Deleted',
         'Task Assigned',
         'Task Status Updated',
-        'Task Deleted',
-        'Chat Event'
+        'Role Updated',
+        'User Deleted',
       ],
     },
     details: {
@@ -29,5 +30,6 @@ const ActivityLogSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
+ 
 module.exports = mongoose.model('ActivityLog', ActivityLogSchema);
+ 

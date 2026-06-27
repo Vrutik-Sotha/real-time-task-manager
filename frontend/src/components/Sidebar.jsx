@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
-import { LayoutDashboard, CheckSquare, MessageSquare, LogOut, ShieldAlert } from 'lucide-react';
+import { LayoutDashboard, CheckSquare, MessageSquare, LogOut, ShieldAlert, Users } from 'lucide-react';
 
 const Sidebar = ({ activeTab, setActiveTab }) => {
   const { user, logout } = useAuth();
@@ -10,15 +10,27 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
   };
 
   const navItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'tasks', label: 'Tasks Board', icon: CheckSquare },
-    { id: 'chat', label: 'Team Chat', icon: MessageSquare },
-  ];
+  { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+  { id: 'tasks', label: 'Tasks Board', icon: CheckSquare },
+  { id: 'chat', label: 'Team Chat', icon: MessageSquare },
+];
 
-  if (user && (user.role === 'Admin' || user.role === 'Team Lead')) {
-    navItems.push({ id: 'activities', label: 'Activity Logs', icon: ShieldAlert });
-  }
+if (user && (user.role === 'Admin' || user.role === 'Team Lead')) {
+  navItems.push({
+    id: 'activities',
+    label: 'Activity Logs',
+    icon: ShieldAlert,
+  });
+}
 
+// Admin only
+if (user?.role === 'Admin') {
+  navItems.push({
+    id: 'team',
+    label: 'Workspace Members',
+    icon: Users,
+  });
+}
   return (
     <aside className="glass-panel" style={{
       display: 'flex',

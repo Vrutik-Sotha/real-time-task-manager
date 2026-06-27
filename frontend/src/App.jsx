@@ -8,6 +8,7 @@ import ChatRoom from './components/ChatRoom';
 import LoginRegister from './components/LoginRegister';
 import ActivityLogs from './components/ActivityLogs';
 import { Bell, X, Check, CheckCheck } from 'lucide-react';
+import TeamManagement from "./components/TeamManagement";
 
 function App() {
   const { 
@@ -523,6 +524,9 @@ function App() {
           )}
           {activeTab === 'chat' && <ChatRoom users={users} />}
           {activeTab === 'activities' && <ActivityLogs />}
+          {activeTab === "team" && (
+    <TeamManagement />
+)}
         </main>
       </div>
 

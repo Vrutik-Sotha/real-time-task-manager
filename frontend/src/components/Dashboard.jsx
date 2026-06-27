@@ -88,7 +88,13 @@ const Dashboard = ({ tasks, users, setActiveTab }) => {
       </div>
 
       {/* Stats Cards Grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', gap: '16px' }}>
+      <div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(6, 1fr)',
+    gap: '16px',
+  }}
+>
         {/* Total Tasks */}
         <div className="glass-panel" style={{ padding: '20px', display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ padding: '12px', borderRadius: '10px', background: 'rgba(99, 102, 241, 0.1)', color: 'var(--primary)' }}>
